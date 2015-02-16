@@ -9,7 +9,7 @@
 #include "Cell.h"
 
 Cell::Cell() {
-    this->_styleID = 1;
+    this->_styleID = 0;
     this->_contentsOfCell = Data();
 }
 
@@ -35,9 +35,10 @@ Data* Cell::getContents() {
 }
 
 string Cell::getXML() {
-    string temp = "<Cell ss:StyleID=\"";
-    temp += to_string(_styleID);
-    temp += "\">\n";
+//    string temp = "<Cell ss:StyleID=\"";
+//    temp += to_string(_styleID);
+//    temp += "\">";
+    string temp = "<Cell>";
     temp += _contentsOfCell.getXML();
     temp += "</Cell>\n";
     return temp;

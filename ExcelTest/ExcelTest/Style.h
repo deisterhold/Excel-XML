@@ -23,7 +23,8 @@ struct Color {
 };
 
 class Style {
-    static int styleID;
+    static int globalStyleID;
+    int styleID;
     bool borders;
     
     string fontName;
@@ -53,7 +54,7 @@ public:
     void setUnderlined(bool value);
     bool getUnderlined();
     
-    static int getStyleID();
+    int getStyleID();
     
     string getXML();
 };

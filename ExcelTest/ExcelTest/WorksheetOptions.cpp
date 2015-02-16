@@ -13,6 +13,8 @@ WorksheetOptions::WorksheetOptions() {
     _selected = true;
     _protectObjects = false;
     _protectScenarios = false;
+    _panes = vector<Pane>();
+    _panes.push_back(Pane(1, 1, 1));
 }
 
 WorksheetOptions::~WorksheetOptions() {
@@ -69,7 +71,7 @@ bool WorksheetOptions::getProtectScenarios() {
 }
 
 string WorksheetOptions::getXML() {
-    string temp = "<WorksheetOptions xmlns=\"urn:schemas-microsoft-com:office:excel\">";
+    string temp = "<WorksheetOptions xmlns=\"urn:schemas-microsoft-com:office:excel\">\n";
     
     temp += "<PageLayoutZoom>";
     temp += to_string(_pageLayoutZoom);

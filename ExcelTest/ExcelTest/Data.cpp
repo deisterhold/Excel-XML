@@ -12,6 +12,11 @@ Data::Data() {
     
 }
 
+Data::Data(string contents) {
+    this->setDataType(DATATYPE_STRING);
+    this->setContents(contents);
+}
+
 Data::Data(string contents, int type) {
     this->setDataType(type);
     this->setContents(contents);
@@ -34,7 +39,7 @@ string Data::getContents() {
 }
 
 string Data::getXML() {
-    string temp = "<ss:Data ss:Type=\"";
+    string temp = "<Data ss:Type=\"";
     switch (this->_type) {
         case 0:
             temp += "String\">";

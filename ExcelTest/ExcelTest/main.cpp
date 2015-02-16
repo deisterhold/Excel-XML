@@ -13,27 +13,51 @@
 #include "Excel.h"
 
 int main(int argc, const char * argv[]) {
-    Excel spreadsheet("/Users/deisterhold/Desktop/Test.xml");
-    Workbook *workbook = spreadsheet.getWorkbook();
-    workbook->addWorksheet(Worksheet("Sheet 1"));
-    Worksheet *worksheet = workbook->getWorksheet(0);
-    worksheet->addTable(Table());
-    Table table = *worksheet->getTable(0);
-    table.addRow(Row());
-    Row row = *table.getRow(0);
-    row.addCell(Cell());
-    Cell cell = *row.getCell(0);
-    cell.setContents(Data("Hello", DATATYPE_STRING));
-    cell.setStyle(1);
-    row.setCell(cell, 0);
-    table.setRow(row, 0);
-    worksheet->setTable(table, 0);
-    workbook->setWorksheet(*worksheet, 0);
-    Style style;
-    style.setBold(true);
-    cout<<spreadsheet.getXML()<<endl;
+    //Create an Excel Document
+    Excel spreadsheet("/Users/deisterhold/Desktop/Test.xls");
+//    Excel spreadsheet;
+//    spreadsheet.open("/Users/deisterhold/Desktop/Test.xls");
     
+    //Get the main workbook (Excel only has a single workbook)
+    Workbook *workbook = spreadsheet.getWorkbook();
+    
+    //Add a worksheet to the workbook
+    workbook->addWorksheet(Worksheet("Sheet 1"));
+    
+    //Get the newly created worksheet
+    Worksheet *worksheet = workbook->getWorksheet(0);
+    
+    //Add a table to the worksheet
+    worksheet->addTable(Table());
+    
+    //Get the newly created table
+    Table *table = worksheet->getTable(0);
+    
+    //Add a row to the table
+    table->addRow(Row());
+    
+    //Get the newly create row
+    Row *row = table->getRow(0);
+    
+    //Add a cell to the row
+    row->addCell(Cell());
+    
+    //Get the newly created cell
+    Cell *cell = row->getCell(0);
+    
+    //Put a data item in the cell (In this example we create a cell to hold a string)
+    //There are currently three data types DATATYPE_STRING, DATATYPE_NUMBER, DATATYPE_DATETIME
+    //All data is given as a string even if a number or time
+    cell->setContents(Data("Hello", DATATYPE_STRING)); //If no data type is given the data is assumed to be a string
+    //Equivalent to above "cell->setContents(Data("Hello"));"
+    
+    //Saves the data in xml to the file
     spreadsheet.save();
+    
+    //Closes the file
     spreadsheet.close();
+    
+    //Optionally output
+//    cout<<spreadsheet.getXML()<<endl;
     return 0;
 }

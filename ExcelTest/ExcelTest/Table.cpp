@@ -19,15 +19,18 @@ Table::~Table() {
 Table::Table(Row data[], int numOfRows) {
     for (int rowNum =  0; rowNum < numOfRows; rowNum++) {
         _contentsOfTable.push_back(data[rowNum]);
+        _widthsOfRows.push_back(Column());
     }
 }
 
 void Table::addRow(Row newRow) {
     _contentsOfTable.push_back(newRow);
+    _widthsOfRows.push_back(Column());
 }
 
 void Table::removeRow(int index) {
     _contentsOfTable.erase(_contentsOfTable.begin() + index);
+    _widthsOfRows.erase(_widthsOfRows.begin() + index);
 }
 
 void Table::setRow(Row newRow, int index) {
@@ -61,10 +64,14 @@ int Table::getRowWidth(int index) {
 }
 
 string Table::getXML() {
-    string temp = "<ss:Table>\n";
+    string temp = "<Table ss:ExpandedColumnCount=\"";
+    temp += to_string(_widthsOfRows.size());
+    temp += "\" ss:ExpandedRowCount=\"";
+    temp += to_string(_contentsOfTable.size());
+    temp += "\" x:FullColumns=\"1\" x:FullRows=\"1\" ss:DefaultColumnWidth=\"65\" ss:DefaultRowHeight=\"15\">\n";
     for (int rowNum = 0; rowNum < _contentsOfTable.size(); rowNum++) {
         temp += _contentsOfTable[rowNum].getXML();
     }
-    temp += "</ss:Table>\n";
+    temp += "</Table>\n";
     return temp;
 }

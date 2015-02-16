@@ -12,6 +12,8 @@ Workbook::Workbook() {
     _contentsOfWorkbook = vector<Worksheet>();
     _workbookStyles = vector<Style>();
     _properties = DocumentProperties();
+    _documentSettings = OfficeDocumentSettings();
+    _excelWorkbook = ExcelWorkbook();
     _workbookStyles.push_back(Style());
 }
 
@@ -35,6 +37,7 @@ Worksheet* Workbook::getWorksheet(int index) {
 }
 
 void Workbook::addStyle(Style newStyle) {
+    cout<<"New Style Made"<<endl;
     _workbookStyles.push_back(newStyle);
 }
 
@@ -75,6 +78,10 @@ int Workbook::getNumberOfStyles() {
 
 string Workbook::getXML() {
     string temp = "<Workbook xmlns=\"urn:schemas-microsoft-com:office:spreadsheet\"\nxmlns:o=\"urn:schemas-microsoft-com:office:office\"\nxmlns:x=\"urn:schemas-microsoft-com:office:excel\"\nxmlns:ss=\"urn:schemas-microsoft-com:office:spreadsheet\"\nxmlns:html=\"http://www.w3.org/TR/REC-html40\">\n";
+    
+    temp += _properties.getXML();
+    temp += _documentSettings.getXML();
+    temp += _excelWorkbook.getXML();
     
     temp += "<Styles>\n";
     for (int numStyles = 0; numStyles < _workbookStyles.size(); numStyles++) {

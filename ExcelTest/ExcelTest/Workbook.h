@@ -20,6 +20,8 @@ class Workbook {
     vector<Worksheet> _contentsOfWorkbook;
     vector<Style> _workbookStyles;
     DocumentProperties _properties;
+    OfficeDocumentSettings _documentSettings;
+    ExcelWorkbook _excelWorkbook;
 public:
     Workbook();
     ~Workbook();

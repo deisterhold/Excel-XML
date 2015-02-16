@@ -33,6 +33,7 @@ public:
     ~Excel();
     
     void save();
+    void open(string fileLocation);
     void close();
     
     void setWorkbook(Workbook newWorkbook);

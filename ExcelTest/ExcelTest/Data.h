@@ -23,6 +23,7 @@ class Data {
     int _type;
 public:
     Data();
+    Data(string contents);
     Data(string contents, int type);
     void setDataType(int theType);
     int getDataType();

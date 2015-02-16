@@ -39,12 +39,12 @@ int Row::getNumberOfCells() {
 }
 
 string Row::getXML() {
-    string temp = "<ss:Row>\n";
+    string temp = "<Row>\n";
     
     for (int cellNum = 0; cellNum < _contentsOfRow.size(); cellNum++) {
         temp += _contentsOfRow[cellNum].getXML();
     }
     
-    temp += "</ss:Row>\n";
+    temp += "</Row>\n";
     return temp;
 }

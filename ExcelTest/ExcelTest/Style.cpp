@@ -8,7 +8,7 @@
 
 #include "Style.h"
 
-int Style::styleID = 0;
+int Style::globalStyleID = 0;
 
 Style::Style() {
     fontName = "Calibri";
@@ -24,7 +24,8 @@ Style::Style() {
     bold = false;
     italicized = false;
     underlined = false;
-    styleID++;
+    styleID = globalStyleID;
+    ++globalStyleID;
 }
 
 Style::~Style() {
@@ -68,15 +69,14 @@ int Style::getStyleID() {
 }
 
 string Style::getXML() {
-    string temp = "<ss:Style ss:ID=\"";
+    string temp = "<Style ss:ID=\"";
     if (styleID == 0) {
-        
         temp += "Default";
-        temp += "\">";
+        temp += "\" ss:Name=\"Normal\">\n";
     }
     else {
         temp += getStyleID();
-        temp += "\">";
+        temp += "\" ss:Name=\"Normal\">\n";
     }
     
     temp += "<Alignment ss:Vertical=\"Bottom\">\n";
@@ -92,7 +92,7 @@ string Style::getXML() {
     temp += "\" ss:Size=\"";
     temp += to_string(fontSize);
     temp += "\" ss:Color=\"#";
-    temp += "000000";
+    temp += "000000"; // Set color to black
     temp += "\"/>\n";
     
     if (interior) {
@@ -128,6 +128,6 @@ string Style::getXML() {
 //        temp += "<ss:Font ss:Underline=\"0\">";
 //    }
     
-    temp += "</ss:Style>\n";
+    temp += "</Style>\n";
     return temp;
 }
