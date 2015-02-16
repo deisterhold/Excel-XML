@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C2674261A8FDC900062C16A /* Column.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C2674241A8FDC900062C16A /* Column.cpp */; };
+		8C26742A1A918AA70062C16A /* DocumentProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C2674281A918AA70062C16A /* DocumentProperties.cpp */; };
+		8C26742E1A918B9F0062C16A /* ExcelWorkbook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C26742C1A918B9F0062C16A /* ExcelWorkbook.cpp */; };
+		8C2674321A91963D0062C16A /* OfficeDocumentSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C2674301A91963D0062C16A /* OfficeDocumentSettings.cpp */; };
+		8C2674361A9198B20062C16A /* WorksheetOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C2674341A9198B20062C16A /* WorksheetOptions.cpp */; };
+		8C26743A1A9199A70062C16A /* Pane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C2674381A9199A70062C16A /* Pane.cpp */; };
+		8C9890611A8C34F20022CDF2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C9890601A8C34F20022CDF2 /* main.cpp */; };
+		8C9890691A8C351E0022CDF2 /* Excel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C9890671A8C351E0022CDF2 /* Excel.cpp */; };
+		8C98906C1A8C352B0022CDF2 /* Workbook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C98906A1A8C352B0022CDF2 /* Workbook.cpp */; };
+		8C98906F1A8C35360022CDF2 /* Worksheet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C98906D1A8C35360022CDF2 /* Worksheet.cpp */; };
+		8C9890721A8C353D0022CDF2 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C9890701A8C353D0022CDF2 /* Cell.cpp */; };
+		8C9890751A8C35DE0022CDF2 /* Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C9890731A8C35DE0022CDF2 /* Table.cpp */; };
+		8C9890781A8C35E60022CDF2 /* Row.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C9890761A8C35E60022CDF2 /* Row.cpp */; };
+		8C98907B1A8C388B0022CDF2 /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C9890791A8C388B0022CDF2 /* Data.cpp */; };
+		8C9890841A8D12AB0022CDF2 /* XMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C9890821A8D12AB0022CDF2 /* XMLParser.cpp */; };
+		8CA62E951A8E94BE00C56374 /* Style.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CA62E931A8E94BE00C56374 /* Style.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C98905B1A8C34F20022CDF2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C2674241A8FDC900062C16A /* Column.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Column.cpp; sourceTree = "<group>"; };
+		8C2674251A8FDC900062C16A /* Column.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Column.h; sourceTree = "<group>"; };
+		8C2674281A918AA70062C16A /* DocumentProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DocumentProperties.cpp; sourceTree = "<group>"; };
+		8C2674291A918AA70062C16A /* DocumentProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentProperties.h; sourceTree = "<group>"; };
+		8C26742C1A918B9F0062C16A /* ExcelWorkbook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExcelWorkbook.cpp; sourceTree = "<group>"; };
+		8C26742D1A918B9F0062C16A /* ExcelWorkbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelWorkbook.h; sourceTree = "<group>"; };
+		8C2674301A91963D0062C16A /* OfficeDocumentSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficeDocumentSettings.cpp; sourceTree = "<group>"; };
+		8C2674311A91963D0062C16A /* OfficeDocumentSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficeDocumentSettings.h; sourceTree = "<group>"; };
+		8C2674341A9198B20062C16A /* WorksheetOptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorksheetOptions.cpp; sourceTree = "<group>"; };
+		8C2674351A9198B20062C16A /* WorksheetOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorksheetOptions.h; sourceTree = "<group>"; };
+		8C2674381A9199A70062C16A /* Pane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pane.cpp; sourceTree = "<group>"; };
+		8C2674391A9199A70062C16A /* Pane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pane.h; sourceTree = "<group>"; };
+		8C98905D1A8C34F20022CDF2 /* ExcelTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExcelTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9890601A8C34F20022CDF2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8C9890671A8C351E0022CDF2 /* Excel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Excel.cpp; sourceTree = "<group>"; };
+		8C9890681A8C351E0022CDF2 /* Excel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Excel.h; sourceTree = "<group>"; };
+		8C98906A1A8C352B0022CDF2 /* Workbook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Workbook.cpp; sourceTree = "<group>"; };
+		8C98906B1A8C352B0022CDF2 /* Workbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workbook.h; sourceTree = "<group>"; };
+		8C98906D1A8C35360022CDF2 /* Worksheet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Worksheet.cpp; sourceTree = "<group>"; };
+		8C98906E1A8C35360022CDF2 /* Worksheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worksheet.h; sourceTree = "<group>"; };
+		8C9890701A8C353D0022CDF2 /* Cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
+		8C9890711A8C353D0022CDF2 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		8C9890731A8C35DE0022CDF2 /* Table.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Table.cpp; sourceTree = "<group>"; };
+		8C9890741A8C35DE0022CDF2 /* Table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Table.h; sourceTree = "<group>"; };
+		8C9890761A8C35E60022CDF2 /* Row.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Row.cpp; sourceTree = "<group>"; };
+		8C9890771A8C35E60022CDF2 /* Row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Row.h; sourceTree = "<group>"; };
+		8C9890791A8C388B0022CDF2 /* Data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
+		8C98907A1A8C388B0022CDF2 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		8C9890821A8D12AB0022CDF2 /* XMLParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XMLParser.cpp; sourceTree = "<group>"; };
+		8C9890831A8D12AB0022CDF2 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		8CA62E931A8E94BE00C56374 /* Style.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Style.cpp; sourceTree = "<group>"; };
+		8CA62E941A8E94BE00C56374 /* Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Style.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C98905A1A8C34F20022CDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C2674271A918A500062C16A /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				8CA62E941A8E94BE00C56374 /* Style.h */,
+				8CA62E931A8E94BE00C56374 /* Style.cpp */,
+			);
+			name = Style;
+			sourceTree = "<group>";
+		};
+		8C26742B1A918B6A0062C16A /* Document Properties */ = {
+			isa = PBXGroup;
+			children = (
+				8C2674291A918AA70062C16A /* DocumentProperties.h */,
+				8C2674281A918AA70062C16A /* DocumentProperties.cpp */,
+			);
+			name = "Document Properties";
+			sourceTree = "<group>";
+		};
+		8C26742F1A918BA20062C16A /* ExcelWorkbook */ = {
+			isa = PBXGroup;
+			children = (
+				8C26742D1A918B9F0062C16A /* ExcelWorkbook.h */,
+				8C26742C1A918B9F0062C16A /* ExcelWorkbook.cpp */,
+			);
+			name = ExcelWorkbook;
+			sourceTree = "<group>";
+		};
+		8C2674331A9196420062C16A /* OfficeDocumentSettings */ = {
+			isa = PBXGroup;
+			children = (
+				8C2674311A91963D0062C16A /* OfficeDocumentSettings.h */,
+				8C2674301A91963D0062C16A /* OfficeDocumentSettings.cpp */,
+			);
+			name = OfficeDocumentSettings;
+			sourceTree = "<group>";
+		};
+		8C2674371A9198BD0062C16A /* WorksheetOptions */ = {
+			isa = PBXGroup;
+			children = (
+				8C2674351A9198B20062C16A /* WorksheetOptions.h */,
+				8C2674341A9198B20062C16A /* WorksheetOptions.cpp */,
+				8C26743B1A919A8C0062C16A /* Pane */,
+			);
+			name = WorksheetOptions;
+			sourceTree = "<group>";
+		};
+		8C26743B1A919A8C0062C16A /* Pane */ = {
+			isa = PBXGroup;
+			children = (
+				8C2674391A9199A70062C16A /* Pane.h */,
+				8C2674381A9199A70062C16A /* Pane.cpp */,
+			);
+			name = Pane;
+			sourceTree = "<group>";
+		};
+		8C9890541A8C34F20022CDF2 = {
+			isa = PBXGroup;
+			children = (
+				8C98905F1A8C34F20022CDF2 /* ExcelTest */,
+				8C98905E1A8C34F20022CDF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C98905E1A8C34F20022CDF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C98905D1A8C34F20022CDF2 /* ExcelTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C98905F1A8C34F20022CDF2 /* ExcelTest */ = {
+			isa = PBXGroup;
+			children = (
+				8C9890601A8C34F20022CDF2 /* main.cpp */,
+				8C9890821A8D12AB0022CDF2 /* XMLParser.cpp */,
+				8C9890831A8D12AB0022CDF2 /* XMLParser.h */,
+				8C9890811A8C47CC0022CDF2 /* Excel Document */,
+			);
+			path = ExcelTest;
+			sourceTree = "<group>";
+		};
+		8C98907C1A8C476E0022CDF2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8C9890711A8C353D0022CDF2 /* Cell.h */,
+				8C9890701A8C353D0022CDF2 /* Cell.cpp */,
+				8C98907A1A8C388B0022CDF2 /* Data.h */,
+				8C9890791A8C388B0022CDF2 /* Data.cpp */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		8C98907D1A8C47760022CDF2 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				8C9890771A8C35E60022CDF2 /* Row.h */,
+				8C9890761A8C35E60022CDF2 /* Row.cpp */,
+				8C98907C1A8C476E0022CDF2 /* Cell */,
+			);
+			name = Row;
+			sourceTree = "<group>";
+		};
+		8C98907E1A8C47B30022CDF2 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				8C9890741A8C35DE0022CDF2 /* Table.h */,
+				8C9890731A8C35DE0022CDF2 /* Table.cpp */,
+				8C2674251A8FDC900062C16A /* Column.h */,
+				8C2674241A8FDC900062C16A /* Column.cpp */,
+				8C98907D1A8C47760022CDF2 /* Row */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		8C98907F1A8C47BA0022CDF2 /* Worksheet */ = {
+			isa = PBXGroup;
+			children = (
+				8C98906E1A8C35360022CDF2 /* Worksheet.h */,
+				8C98906D1A8C35360022CDF2 /* Worksheet.cpp */,
+				8C2674371A9198BD0062C16A /* WorksheetOptions */,
+				8C98907E1A8C47B30022CDF2 /* Table */,
+			);
+			name = Worksheet;
+			sourceTree = "<group>";
+		};
+		8C9890801A8C47C20022CDF2 /* Workbook */ = {
+			isa = PBXGroup;
+			children = (
+				8C26742B1A918B6A0062C16A /* Document Properties */,
+				8C2674331A9196420062C16A /* OfficeDocumentSettings */,
+				8C26742F1A918BA20062C16A /* ExcelWorkbook */,
+				8C2674271A918A500062C16A /* Style */,
+				8C98906B1A8C352B0022CDF2 /* Workbook.h */,
+				8C98906A1A8C352B0022CDF2 /* Workbook.cpp */,
+				8C98907F1A8C47BA0022CDF2 /* Worksheet */,
+			);
+			name = Workbook;
+			sourceTree = "<group>";
+		};
+		8C9890811A8C47CC0022CDF2 /* Excel Document */ = {
+			isa = PBXGroup;
+			children = (
+				8C9890671A8C351E0022CDF2 /* Excel.cpp */,
+				8C9890681A8C351E0022CDF2 /* Excel.h */,
+				8C9890801A8C47C20022CDF2 /* Workbook */,
+			);
+			name = "Excel Document";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C98905C1A8C34F20022CDF2 /* ExcelTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9890641A8C34F20022CDF2 /* Build configuration list for PBXNativeTarget "ExcelTest" */;
+			buildPhases = (
+				8C9890591A8C34F20022CDF2 /* Sources */,
+				8C98905A1A8C34F20022CDF2 /* Frameworks */,
+				8C98905B1A8C34F20022CDF2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExcelTest;
+			productName = ExcelTest;
+			productReference = 8C98905D1A8C34F20022CDF2 /* ExcelTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C9890551A8C34F20022CDF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Daniel Eisterhold";
+				TargetAttributes = {
+					8C98905C1A8C34F20022CDF2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C9890581A8C34F20022CDF2 /* Build configuration list for PBXProject "ExcelTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C9890541A8C34F20022CDF2;
+			productRefGroup = 8C98905E1A8C34F20022CDF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C98905C1A8C34F20022CDF2 /* ExcelTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C9890591A8C34F20022CDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9890751A8C35DE0022CDF2 /* Table.cpp in Sources */,
+				8C98906C1A8C352B0022CDF2 /* Workbook.cpp in Sources */,
+				8C9890841A8D12AB0022CDF2 /* XMLParser.cpp in Sources */,
+				8C9890611A8C34F20022CDF2 /* main.cpp in Sources */,
+				8C26742E1A918B9F0062C16A /* ExcelWorkbook.cpp in Sources */,
+				8C2674321A91963D0062C16A /* OfficeDocumentSettings.cpp in Sources */,
+				8C98907B1A8C388B0022CDF2 /* Data.cpp in Sources */,
+				8C98906F1A8C35360022CDF2 /* Worksheet.cpp in Sources */,
+				8C2674361A9198B20062C16A /* WorksheetOptions.cpp in Sources */,
+				8C9890691A8C351E0022CDF2 /* Excel.cpp in Sources */,
+				8CA62E951A8E94BE00C56374 /* Style.cpp in Sources */,
+				8C9890721A8C353D0022CDF2 /* Cell.cpp in Sources */,
+				8C9890781A8C35E60022CDF2 /* Row.cpp in Sources */,
+				8C26743A1A9199A70062C16A /* Pane.cpp in Sources */,
+				8C2674261A8FDC900062C16A /* Column.cpp in Sources */,
+				8C26742A1A918AA70062C16A /* DocumentProperties.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8C9890621A8C34F20022CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8C9890631A8C34F20022CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8C9890651A8C34F20022CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8C9890661A8C34F20022CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C9890581A8C34F20022CDF2 /* Build configuration list for PBXProject "ExcelTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9890621A8C34F20022CDF2 /* Debug */,
+				8C9890631A8C34F20022CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9890641A8C34F20022CDF2 /* Build configuration list for PBXNativeTarget "ExcelTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9890651A8C34F20022CDF2 /* Debug */,
+				8C9890661A8C34F20022CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C9890551A8C34F20022CDF2 /* Project object */;
+}
