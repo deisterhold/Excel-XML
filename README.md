@@ -12,6 +12,10 @@ int main(int argc, const char * argv[]) {
   //Get the main workbook (Excel only has a single workbook)
   Workbook *workbook = spreadsheet.getWorkbook();
   
+  //Set Author and Company (Optional)
+  workbook->setAuthor("Name Here");
+  workbook->setCompany("Company Name");
+  
   //Add a worksheet to the workbook
   workbook->addWorksheet(Worksheet("Sheet 1"));
   
