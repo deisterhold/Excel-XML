@@ -69,7 +69,7 @@ int Style::getStyleID() {
 }
 
 string Style::getXML() {
-    string temp = "<Style ss:ID=\"";
+    string temp = "  <Style ss:ID=\"";
     if (styleID == 0) {
         temp += "Default";
         temp += "\" ss:Name=\"Normal\">\n";
@@ -79,13 +79,13 @@ string Style::getXML() {
         temp += "\" ss:Name=\"Normal\">\n";
     }
     
-    temp += "<Alignment ss:Vertical=\"Bottom\">\n";
+    temp += "   <Alignment ss:Vertical=\"Bottom\"/>\n";
     
     if (borders) {
-        temp += "<Borders/>\n";
+        temp += "   <Borders/>\n";
     }
     
-    temp += "<Font ss:FontName=\"";
+    temp += "   <Font ss:FontName=\"";
     temp += fontName;
     temp += "\" x:Family=\"";
     temp += fontFamily;
@@ -96,15 +96,15 @@ string Style::getXML() {
     temp += "\"/>\n";
     
     if (interior) {
-        temp += "<Interior/>\n";
+        temp += "   <Interior/>\n";
     }
     
     if (numberFormat) {
-        temp += "<NumberFormat/>\n";
+        temp += "   <NumberFormat/>\n";
     }
     
     if (protection) {
-        temp += "<Protection/>\n";
+        temp += "   <Protection/>\n";
     }
     
 //    if (bold) {
@@ -128,6 +128,6 @@ string Style::getXML() {
 //        temp += "<ss:Font ss:Underline=\"0\">";
 //    }
     
-    temp += "</Style>\n";
+    temp += "  </Style>\n";
     return temp;
 }

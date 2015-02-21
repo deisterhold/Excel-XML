@@ -71,37 +71,39 @@ bool WorksheetOptions::getProtectScenarios() {
 }
 
 string WorksheetOptions::getXML() {
-    string temp = "<WorksheetOptions xmlns=\"urn:schemas-microsoft-com:office:excel\">\n";
+    string temp = "  <WorksheetOptions xmlns=\"urn:schemas-microsoft-com:office:excel\">\n";
     
-    temp += "<PageLayoutZoom>";
+    temp += "   <Unsynced/>\n";
+    
+    temp += "   <PageLayoutZoom>";
     temp += to_string(_pageLayoutZoom);
     temp += "</PageLayoutZoom>\n";
     
     if (_selected) {
-        temp += "<Selected/>\n";
+        temp += "   <Selected/>\n";
     }
     
-    temp += "<Panes>\n";
-    for (int paneNum = 0; paneNum < _panes.size(); paneNum++) {
-        _panes[paneNum].getXML();
-    }
-    temp += "</Panes>\n";
+//    temp += "   <Panes>\n";
+//    for (int paneNum = 0; paneNum < _panes.size(); paneNum++) {
+//        temp += _panes[paneNum].getXML();
+//    }
+//    temp += "   </Panes>\n";
     
     if (_protectObjects) {
-        temp += "<ProtectObjects>True</ProtectObjects>\n";
+        temp += "   <ProtectObjects>True</ProtectObjects>\n";
     }
     else {
-        temp += "<ProtectObjects>False</ProtectObjects>\n";
+        temp += "   <ProtectObjects>False</ProtectObjects>\n";
     }
     
     if (_protectScenarios) {
-        temp += "<ProtectScenarios>True</ProtectScenarios>\n";
+        temp += "   <ProtectScenarios>True</ProtectScenarios>\n";
     }
     else {
-        temp += "<ProtectScenarios>False</ProtectScenarios>\n";
+        temp += "   <ProtectScenarios>False</ProtectScenarios>\n";
     }
     
-    temp += "</WorksheetOptions>\n";
+    temp += "  </WorksheetOptions>\n";
     
     return temp;
 }

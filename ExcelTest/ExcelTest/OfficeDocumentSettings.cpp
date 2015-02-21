@@ -25,12 +25,12 @@ bool OfficeDocumentSettings::getAllowPNG() {
 }
 
 string OfficeDocumentSettings::getXML() {
-    string temp = "<OfficeDocumentSettings xmlns=\"urn:schemas-microsoft-com:office:office\">\n";
+    string temp = " <OfficeDocumentSettings xmlns=\"urn:schemas-microsoft-com:office:office\">\n";
     
     if(_allowPNG) {
-        temp += "<AllowPNG/>\n";
+        temp += "  <AllowPNG/>\n";
     }
     
-    temp += "</OfficeDocumentSettings>\n";
+    temp += " </OfficeDocumentSettings>\n";
     return temp;
 }

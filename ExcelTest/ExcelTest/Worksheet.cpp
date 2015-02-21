@@ -51,7 +51,7 @@ int Worksheet::getNumberOfTables() {
 }
 
 string Worksheet::getXML() {
-    string temp = "<Worksheet ss:Name=\"";
+    string temp = " <Worksheet ss:Name=\"";
     temp += _name;
     temp += "\">\n";
     
@@ -62,6 +62,6 @@ string Worksheet::getXML() {
     
     temp += _options.getXML();
     
-    temp += "</Worksheet>\n";
+    temp += " </Worksheet>\n";
     return temp;
 }

@@ -21,13 +21,18 @@ int main(int argc, const char * argv[]) {
     //Get the main workbook (Excel only has a single workbook)
     Workbook *workbook = spreadsheet.getWorkbook();
     
+    //Set Author and Company (Optional)
+    workbook->setAuthor("Name Here");
+    workbook->setCompany("Company Name");
+    
     //Add a worksheet to the workbook
-    workbook->addWorksheet(Worksheet("Sheet 1"));
+    workbook->addWorksheet(Worksheet("Sheet1"));
     
     //Get the newly created worksheet
     Worksheet *worksheet = workbook->getWorksheet(0);
     
     //Add a table to the worksheet
+    worksheet->addTable(Table());
     worksheet->addTable(Table());
     
     //Get the newly created table
@@ -41,6 +46,7 @@ int main(int argc, const char * argv[]) {
     
     //Add a cell to the row
     row->addCell(Cell());
+    row->addCell(Cell());
     
     //Get the newly created cell
     Cell *cell = row->getCell(0);
@@ -51,6 +57,8 @@ int main(int argc, const char * argv[]) {
     cell->setContents(Data("Hello", DATATYPE_STRING)); //If no data type is given the data is assumed to be a string
     //Equivalent to above "cell->setContents(Data("Hello"));"
     
+    cell = row->getCell(1);
+    cell->setContents(Data("New Column"));
     //Saves the data in xml to the file
     spreadsheet.save();
     

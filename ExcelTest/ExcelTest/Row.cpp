@@ -39,12 +39,13 @@ int Row::getNumberOfCells() {
 }
 
 string Row::getXML() {
-    string temp = "<Row>\n";
+//    string temp = "   <Row>\n";
+    string temp = "   <Row ss:AutoFitHeight=\"0\">\n";
     
     for (int cellNum = 0; cellNum < _contentsOfRow.size(); cellNum++) {
         temp += _contentsOfRow[cellNum].getXML();
     }
     
-    temp += "</Row>\n";
+    temp += "   </Row>\n";
     return temp;
 }

@@ -32,7 +32,14 @@ DocumentProperties::~DocumentProperties() {
 }
 
 void DocumentProperties::setAuthor(string newAuthor) {
-    _author = newAuthor;
+    if (_author == "") {
+        _author = newAuthor;
+        _lastAuthor = newAuthor;
+    }
+    else {
+        _lastAuthor = _author;
+        _author = newAuthor;
+    }
 }
 
 string DocumentProperties::getAuthor() {
@@ -56,29 +63,29 @@ string DocumentProperties::getCompany() {
 }
 
 string DocumentProperties::getXML() {
-    string temp = "<DocumentProperties xmlns=\"urn:schemas-microsoft-com:office:office\">\n";
+    string temp = " <DocumentProperties xmlns=\"urn:schemas-microsoft-com:office:office\">\n";
     
-    temp += "<Author>";
+    temp += "  <Author>";
     temp += _author;
     temp += "</Author>\n";
     
-    temp += "<LastAuthor>";
+    temp += "  <LastAuthor>";
     temp += _lastAuthor;
     temp += "</LastAuthor>\n";
     
-    temp += "<Created>";
+    temp += "  <Created>";
     temp += _timeCreated;
     temp += "</Created>\n";
     
-    temp += "<Company>";
+    temp += "  <Company>";
     temp += _company;
     temp += "</Company>\n";
     
-    temp += "<Version>";
+    temp += "  <Version>";
     temp += _version;
     temp += "</Version>\n";
     
-    temp += "</DocumentProperties>";
+    temp += " </DocumentProperties>\n";
     
     return temp;
 }

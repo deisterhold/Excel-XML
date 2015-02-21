@@ -9,7 +9,9 @@
 #include "Pane.h"
 
 Pane::Pane() {
-    
+    setNumber(1);
+    setActiveRow(1);
+    setActiveCol(1);
 }
 
 Pane::Pane(int number, int activeRow, int activeCol) {
@@ -47,20 +49,20 @@ int Pane::getActiveCol() {
 }
 
 string Pane::getXML() {
-    string temp = "<Pane>\n";
+    string temp = "    <Pane>\n";
     
-    temp += "<Number>";
-    temp += _number;
+    temp += "     <Number>";
+    temp += to_string(_number);
     temp += "</Number>\n";
     
-    temp += "<ActiveRow>";
-    temp += _activeRow;
+    temp += "     <ActiveRow>";
+    temp += to_string(_activeRow);
     temp += "</ActiveRow>\n";
     
-    temp += "<ActiveCol>";
-    temp += _activeCol;
+    temp += "     <ActiveCol>";
+    temp += to_string(_activeCol);
     temp += "</ActiveCol>\n";
     
-    temp += "</Pane>\n";
+    temp += "    </Pane>\n";
     return temp;
 }

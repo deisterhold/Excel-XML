@@ -8,6 +8,16 @@
 
 #include "Table.h"
 
+int getMaxCellCount(vector<Row> table) {
+    int max = 0;
+    for (int rowNum = 0; rowNum < table.size(); rowNum++) {
+        if(table[rowNum].getNumberOfCells() > max) {
+            max = table[rowNum].getNumberOfCells();
+        }
+    }
+    return max;
+}
+
 Table::Table() {
     _contentsOfTable = vector<Row>();
     _widthsOfRows = vector<Column>();
@@ -64,14 +74,14 @@ int Table::getRowWidth(int index) {
 }
 
 string Table::getXML() {
-    string temp = "<Table ss:ExpandedColumnCount=\"";
-    temp += to_string(_widthsOfRows.size());
+    string temp = "  <Table ss:ExpandedColumnCount=\"";
+    temp += to_string(getMaxCellCount(_contentsOfTable));
     temp += "\" ss:ExpandedRowCount=\"";
     temp += to_string(_contentsOfTable.size());
-    temp += "\" x:FullColumns=\"1\" x:FullRows=\"1\" ss:DefaultColumnWidth=\"65\" ss:DefaultRowHeight=\"15\">\n";
+    temp += "\" x:FullColumns=\"1\"\n   x:FullRows=\"1\" ss:DefaultColumnWidth=\"65\" ss:DefaultRowHeight=\"15\">\n";
     for (int rowNum = 0; rowNum < _contentsOfTable.size(); rowNum++) {
         temp += _contentsOfTable[rowNum].getXML();
     }
-    temp += "</Table>\n";
+    temp += "  </Table>\n";
     return temp;
 }

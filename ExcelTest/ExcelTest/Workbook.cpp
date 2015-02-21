@@ -77,17 +77,17 @@ int Workbook::getNumberOfStyles() {
 }
 
 string Workbook::getXML() {
-    string temp = "<Workbook xmlns=\"urn:schemas-microsoft-com:office:spreadsheet\"\nxmlns:o=\"urn:schemas-microsoft-com:office:office\"\nxmlns:x=\"urn:schemas-microsoft-com:office:excel\"\nxmlns:ss=\"urn:schemas-microsoft-com:office:spreadsheet\"\nxmlns:html=\"http://www.w3.org/TR/REC-html40\">\n";
+    string temp = "<Workbook xmlns=\"urn:schemas-microsoft-com:office:spreadsheet\"\n xmlns:o=\"urn:schemas-microsoft-com:office:office\"\n xmlns:x=\"urn:schemas-microsoft-com:office:excel\"\n xmlns:ss=\"urn:schemas-microsoft-com:office:spreadsheet\"\n xmlns:html=\"http://www.w3.org/TR/REC-html40\">\n";
     
     temp += _properties.getXML();
     temp += _documentSettings.getXML();
     temp += _excelWorkbook.getXML();
     
-    temp += "<Styles>\n";
+    temp += " <Styles>\n";
     for (int numStyles = 0; numStyles < _workbookStyles.size(); numStyles++) {
         temp += _workbookStyles[numStyles].getXML();
     }
-    temp += "</Styles>\n";
+    temp += " </Styles>\n";
     
     for(int worksheetNum = 0; worksheetNum < _contentsOfWorkbook.size(); worksheetNum++) {
         temp += _contentsOfWorkbook[worksheetNum].getXML();

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8446F9CE-0BFC-40D8-A46A-6A53B1AE06C5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ExcelTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>06F16A0B4CBA92F0714A1CDB196AB48CD0E2DF35</key>
+		<string>https://github.com/deisterhold/Excel-XML.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ExcelTest/ExcelTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>06F16A0B4CBA92F0714A1CDB196AB48CD0E2DF35</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/deisterhold/Excel-XML.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>06F16A0B4CBA92F0714A1CDB196AB48CD0E2DF35</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>06F16A0B4CBA92F0714A1CDB196AB48CD0E2DF35</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Excel-XML</string>
+		</dict>
+	</array>
+</dict>
+</plist>

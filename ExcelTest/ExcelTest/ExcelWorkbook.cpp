@@ -9,9 +9,9 @@
 #include "ExcelWorkbook.h"
 
 ExcelWorkbook::ExcelWorkbook() {
-    windowHeight = 7680;
-    windowWidth = 10240;
-    windowTopX = 0;
+    windowHeight = 13700;
+    windowWidth = 25600;
+    windowTopX = 5740;
     windowTopY = 0;
     protectStructure = false;
     protectWindows = false;
@@ -38,38 +38,38 @@ unsigned int ExcelWorkbook::getWindowWidth() {
 }
 
 string ExcelWorkbook::getXML() {
-    string temp = "<ExcelWorkbook xmlns=\"urn:schemas-microsoft-com:office:excel\">\n";
+    string temp = " <ExcelWorkbook xmlns=\"urn:schemas-microsoft-com:office:excel\">\n";
     
-    temp += "<WindowHeight>";
+    temp += "  <WindowHeight>";
     temp += to_string(windowHeight);
     temp += "</WindowHeight>\n";
     
-    temp += "<WindowWidth>";
+    temp += "  <WindowWidth>";
     temp += to_string(windowWidth);
     temp += "</WindowWidth>\n";
     
-    temp += "<WindowTopX>";
+    temp += "  <WindowTopX>";
     temp += to_string(windowTopX);
     temp += "</WindowTopX>\n";
     
-    temp += "<WindowTopY>";
+    temp += "  <WindowTopY>";
     temp += to_string(windowTopY);
     temp += "</WindowTopY>\n";
     
     if (protectStructure) {
-        temp += "<ProtectStructure>True</ProtectStructure>\n";
+        temp += "  <ProtectStructure>True</ProtectStructure>\n";
     }
     else {
-        temp += "<ProtectStructure>False</ProtectStructure>\n";
+        temp += "  <ProtectStructure>False</ProtectStructure>\n";
     }
     
     if (protectWindows) {
-        temp += "<ProtectWindows>True</ProtectWindows>\n";
+        temp += "  <ProtectWindows>True</ProtectWindows>\n";
     }
     else {
-        temp += "<ProtectWindows>False</ProtectWindows>\n";
+        temp += "  <ProtectWindows>False</ProtectWindows>\n";
     }
     
-    temp += "</ExcelWorkbook>\n";
+    temp += " </ExcelWorkbook>\n";
     return temp;
 }

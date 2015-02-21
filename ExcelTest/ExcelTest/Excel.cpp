@@ -39,7 +39,7 @@ Excel::Excel(string fileLocation) {
 }
 
 string Excel::getXML() {
-    string temp = "<?xml version=\"1.0\">\n";
+    string temp = "<?xml version=\"1.0\"?>\n";
     temp += _workbook.getXML();
     return temp;
 }
